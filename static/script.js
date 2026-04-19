@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let loading = document.getElementById("loading");
 
         loading.style.display = "block";
-        output.innerText = "";
+        output.innerHTML = "";
 
         fetch("/scan", {
             method: "POST",
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.text())
         .then(data => {
             loading.style.display = "none";
-            output.innerText = data;
+            output.innerHTML = data;
             loadHistory();
         });
     }
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 data.history.forEach(item => {
                     let li = document.createElement("li");
-                    li.innerText = item;
+                    li.innerHTML = item;
                     list.appendChild(li);
                 });
             });
