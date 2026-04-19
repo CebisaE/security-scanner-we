@@ -1,0 +1,107 @@
+body {
+    background-color: #0f1115;
+    color: #00ff99;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #00ff99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00cc77;
+}
+
+.results {
+    margin-top: 30px;
+    background-color: #1a1d24;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+}
+
+pre {
+    color: #ffffff;
+}
+.results {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.card {
+    background-color: #1a1d24;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: left;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.card.green {
+    border-left: 5px solid #00ff99;
+}
+
+.card.red {
+    border-left: 5px solid #ff4d4d;
+}
+
+.card.blue {
+    border-left: 5px solid #4da6ff;
+}
+.history {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    background: #1a1d24;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
+.loading {
+    color: #00ff99;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
